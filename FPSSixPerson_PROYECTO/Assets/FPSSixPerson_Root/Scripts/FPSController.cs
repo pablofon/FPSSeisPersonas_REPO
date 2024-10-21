@@ -17,6 +17,7 @@ public class FPSController : MonoBehaviour
     Vector2 currentDir;
     Vector2 currentDirVelocity;
     Vector3 velocity;
+    Animator anim;
 
     #region General Variables
     [Header("General References")]
@@ -50,6 +51,8 @@ public class FPSController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked; //Lockea el cursor en el centro de la cam
             Cursor.visible = false; //Hace el cursor invisible al jugador
         }
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -104,6 +107,10 @@ public class FPSController : MonoBehaviour
         {
             velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+    }
+    public void OnCrouch()
+    {
+        anim.SetBool("Crouching", true);
     }
     #endregion
 }
