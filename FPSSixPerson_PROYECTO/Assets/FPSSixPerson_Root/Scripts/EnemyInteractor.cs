@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyInteractor : MonoBehaviour
 {
     [Header("Enemy General Parameters")]
-    [SerializeField] int enemyHitPoints;
-    [SerializeField] int enemyMaxHP;
+    //[SerializeField] int enemyHitPoints;
+    //[SerializeField] int enemyMaxHP;
 
     [Header("Feedback References")]
     MeshRenderer enemyRend;
@@ -17,18 +17,18 @@ public class EnemyInteractor : MonoBehaviour
     private void Start()
     {
         enemyRend = GetComponent<MeshRenderer>();
-        enemyHitPoints = enemyMaxHP;
+        //enemyHitPoints = enemyMaxHP;
     }
 
     private void Update()
     {
-        if ( enemyHitPoints <= 0) { gameObject.SetActive(false); }
+       // if ( enemyHitPoints <= 0) { gameObject.SetActive(false); }
     }
 
     public void TakeDamage(int damage)
     {
         enemyRend.material = damagedMat;
-        enemyHitPoints -= damage;
+        //enemyHitPoints -= damage;
         Invoke(nameof(ResetDamageFeedback), feedbackResetTime);
     }
 
