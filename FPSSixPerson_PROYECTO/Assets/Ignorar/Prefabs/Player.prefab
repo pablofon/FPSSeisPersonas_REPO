@@ -554,7 +554,7 @@ MonoBehaviour:
   groundCheck: {fileID: 8395690603141589845}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   mouseSmoothTime: 0.03
   cursorLock: 1
   mouseSensitivity: 3.5
@@ -579,7 +579,7 @@ MonoBehaviour:
   shootPoint: {fileID: 0}
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   weaponAudio: {fileID: 0}
   damage: 20
   range: 100
