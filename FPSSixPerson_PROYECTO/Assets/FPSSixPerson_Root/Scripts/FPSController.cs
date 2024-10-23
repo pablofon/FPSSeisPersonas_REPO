@@ -18,6 +18,7 @@ public class FPSController : MonoBehaviour
     Vector2 currentDirVelocity;
     Vector3 velocity;
     Animator anim;
+    bool crouching;
 
     #region General Variables
     [Header("General References")]
@@ -110,7 +111,16 @@ public class FPSController : MonoBehaviour
     }
     public void OnCrouch()
     {
-        anim.SetBool("Crouching", true);
+        if (!crouching)
+        {
+            crouching = true;
+            anim.SetBool("Crouching", true);
+        }
+        else
+        {
+            crouching = false;
+            anim.SetBool("Crouching", false);
+        }
     }
     #endregion
 }
