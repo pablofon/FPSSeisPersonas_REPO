@@ -105,8 +105,8 @@ public class EnemyBasicAI : MonoBehaviour
         {
             //Código de ataque: es variable al gusto del progrador
             //Este atque solo es un ejemplo: disparo de bala física
-            Rigidbody rb = Instantiate(projectile, shootPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
+           /* Rigidbody rb = Instantiate(projectile, shootPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse); */
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
