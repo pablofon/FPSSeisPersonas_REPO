@@ -80,6 +80,8 @@ public class GunSystem : MonoBehaviour
                 //HACER DAÑO
                 EnemyInteractor enemyDamageScript = hit.collider.GetComponent<EnemyInteractor>();
                 enemyDamageScript.TakeDamage(damage);
+                EnemyBasicAI enemyAIScript = hit.collider.GetComponent<EnemyBasicAI>();
+                enemyAIScript.TakeStun();
             }
 
             
