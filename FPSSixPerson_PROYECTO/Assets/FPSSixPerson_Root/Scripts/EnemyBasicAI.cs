@@ -30,6 +30,8 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] float attackRange; //Rango de detección ATACAR
     [SerializeField] bool targetInSightRange; //TRUE cuando pasamos a PERSEGUIR
     [SerializeField] bool targetInAttackRange; //TRUE cuendo pasamos a ATACAR
+    [SerializeField] float stunTime = 2f;
+    [SerializeField] bool stunned = false;
 
     #endregion
 
@@ -46,10 +48,19 @@ public class EnemyBasicAI : MonoBehaviour
         targetInSightRange = Physics.CheckSphere(transform.position, sightRange, targetLayer);
         targetInAttackRange = Physics.CheckSphere(transform.position, attackRange, targetLayer);
 
-        //Máquina de estados con booleanos: lógica del comportamiento del agente
-        if (!targetInSightRange && !targetInAttackRange) { Patroling(); }
-        if (targetInSightRange && !targetInAttackRange) { ChaseTarget(); }
-        if (targetInSightRange && targetInAttackRange) { AttackTarget(); }
+        if (!stunned)
+        {
+            //Máquina de estados con booleanos: lógica del comportamiento del agente
+            if (!targetInSightRange && !targetInAttackRange) { Patroling(); }
+            if (targetInSightRange && !targetInAttackRange) { ChaseTarget(); }
+            if (targetInSightRange && targetInAttackRange) { AttackTarget(); }
+        }
+        
+        if (stunned)
+        {
+            agent.SetDestination(transform.position);
+            Invoke(nameof(ResetPatrol), stunTime);
+        }
     }
 
     void Patroling()
@@ -112,5 +123,15 @@ public class EnemyBasicAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public void TakeStun()
+    {
+        stunned = true;
+    }
+
+    void ResetPatrol()
+    {
+        stunned = false;
     }
 }
