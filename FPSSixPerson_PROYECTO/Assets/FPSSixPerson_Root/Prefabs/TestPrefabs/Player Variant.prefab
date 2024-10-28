@@ -101,7 +101,7 @@ PrefabInstance:
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
@@ -110,8 +110,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: aeb6118e-8e97-4e71-9266-06350f76a95a
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: Gameplay/Crouch[/Keyboard/shift]
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Gameplay/Interact[/Keyboard/e]
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
@@ -120,8 +130,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
@@ -135,8 +155,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnCrouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnInteract
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
@@ -145,7 +175,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InteractSystem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7440302180409987081, guid: f14ad1784d9838743abe171ccbcae1ba,
