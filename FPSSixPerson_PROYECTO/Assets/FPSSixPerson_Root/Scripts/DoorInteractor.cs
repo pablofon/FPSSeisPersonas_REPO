@@ -8,11 +8,14 @@ public class DoorInteractor : MonoBehaviour
     Animator anim;
     [SerializeField] bool open = false;
     [SerializeField] GameObject coll;
+    Collider collid;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        collid = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -46,5 +49,13 @@ public class DoorInteractor : MonoBehaviour
             open = false;
         }
         //open = true;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            open = true;
+        }
     }
 }
