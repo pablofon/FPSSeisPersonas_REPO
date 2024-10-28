@@ -17,6 +17,9 @@ public class Audio_Manager : MonoBehaviour
     public AudioClip Door;
     public AudioClip NoDoor;
     public AudioClip Light;
+    public AudioClip Panel;
+    public AudioClip Buttons;
+    
 
 
 
