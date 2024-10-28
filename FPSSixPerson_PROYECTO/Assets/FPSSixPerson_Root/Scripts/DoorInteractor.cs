@@ -37,14 +37,14 @@ public class DoorInteractor : MonoBehaviour
 
     public void Open()
     {
-        /*if (!open)
+        if (!open)
         {
             open = true;
         }
-        if (open)
+        else
         {
             open = false;
-        }*/
-        open = true;
+        }
+        //open = true;
     }
 }
