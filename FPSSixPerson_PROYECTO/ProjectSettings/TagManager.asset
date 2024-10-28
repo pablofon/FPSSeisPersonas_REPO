@@ -8,6 +8,7 @@ TagManager:
   - FirstKey
   - LockedDoor
   - Door
+  - Audio
   layers:
   - Default
   - TransparentFX
