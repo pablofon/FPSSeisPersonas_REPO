@@ -13,6 +13,9 @@ public class Audio_Manager : MonoBehaviour
     [Header("_________Clips_________")]
     public AudioClip background;
     public AudioClip PickUp;
+    public AudioClip Detected;
+    public AudioClip Light;
+
 
     private void Start()
     {
