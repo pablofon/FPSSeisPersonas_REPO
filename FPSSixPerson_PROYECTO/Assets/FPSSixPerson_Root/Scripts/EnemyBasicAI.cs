@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class EnemyBasicAI : MonoBehaviour
 {
+
     #region General Variables
     [Header("AI Configuration")]
     [SerializeField] NavMeshAgent agent; //Ref al componente de IA
@@ -24,6 +25,7 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] GameObject projectile; //Ref al prefab del proyectil
     [SerializeField] Transform shootPoint; //punto del que saldra el proyectil
     [SerializeField] float projectileSpeed; //Velocidad del proyectil
+    Audio_Manager audiomanager;
 
     [Header("States & Detectipon")]
     [SerializeField] float sightRange; //Rango de detección PERSEGUIR
@@ -32,6 +34,7 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] bool targetInAttackRange; //TRUE cuendo pasamos a ATACAR
     [SerializeField] float stunTime = 2f;
     [SerializeField] bool stunned = false;
+    [SerializeField] bool chaseAudioAlreadyPlayed;
 
     #endregion
 
@@ -39,6 +42,8 @@ public class EnemyBasicAI : MonoBehaviour
     {
         target = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
+        chaseAudioAlreadyPlayed = false;
     }
 
     // Update is called once per frame
@@ -52,7 +57,16 @@ public class EnemyBasicAI : MonoBehaviour
         {
             //Máquina de estados con booleanos: lógica del comportamiento del agente
             if (!targetInSightRange && !targetInAttackRange) { Patroling(); }
-            if (targetInSightRange && !targetInAttackRange) { ChaseTarget(); }
+            if (targetInSightRange && !targetInAttackRange) 
+            { 
+                ChaseTarget();
+
+                if (!chaseAudioAlreadyPlayed)
+                {
+                    audiomanager.PlaySFX(audiomanager.Detected);
+                    chaseAudioAlreadyPlayed = true;
+                }
+            }
             if (targetInSightRange && targetInAttackRange) { AttackTarget(); }
         }
         
@@ -65,6 +79,7 @@ public class EnemyBasicAI : MonoBehaviour
 
     void Patroling()
     {
+        chaseAudioAlreadyPlayed = false;
         //Condicional que define si el agente tiene que encontrar un nuevo punto al que ir o perseguir un punto ya creado
         if (!walkPointSet) { SearchWalkPoint(); }
         else { agent.SetDestination(walkPoint); }
@@ -73,6 +88,8 @@ public class EnemyBasicAI : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         if (distanceToWalkPoint.magnitude < 1) { walkPointSet = false; }
+
+       
     }
 
     void SearchWalkPoint()

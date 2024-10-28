@@ -1156,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06252439, y: 0.8092603}
   m_AnchorMax: {x: 0.106000006, y: 0.8822603}
-  m_AnchoredPosition: {x: -0.2999878, y: 0.099990845}
+  m_AnchoredPosition: {x: -0.30004883, y: 0.099975586}
   m_SizeDelta: {x: 72, y: 73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778894878
@@ -1374,7 +1374,7 @@ GameObject:
   - component: {fileID: 1189062401}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1394,7 +1394,11 @@ MonoBehaviour:
   musicSource: {fileID: 687133079}
   SFXSource: {fileID: 665012144}
   background: {fileID: 8300000, guid: 2467852e3e8da844da792a4e56828409, type: 3}
-  PickUp: {fileID: 0}
+  PickUp: {fileID: 8300000, guid: bae2ccdf349a3a54694b992647bbc9e9, type: 3}
+  Detected: {fileID: 8300000, guid: e4d7affecfcc35c4e8463ea6fcac5255, type: 3}
+  Door: {fileID: 8300000, guid: 7fcad7e1e7e991140a420fbc6ba11be3, type: 3}
+  NoDoor: {fileID: 8300000, guid: bcd893d50b80a844aacaddd27adaf118, type: 3}
+  Light: {fileID: 8300000, guid: 56466bb247646b949b63a5456fa61b0b, type: 3}
 --- !u!4 &1189062402
 Transform:
   m_ObjectHideFlags: 0

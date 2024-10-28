@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class KeyInteractor : MonoBehaviour
 {
+    Audio_Manager audiomanager;
+    private void Awake()
+    {
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +23,7 @@ public class KeyInteractor : MonoBehaviour
 
     public void Grabbed()
     {
+        audiomanager.PlaySFX(audiomanager.PickUp);
         GameManager.Instance.firstKey = true;
         gameObject.SetActive(false);
     }

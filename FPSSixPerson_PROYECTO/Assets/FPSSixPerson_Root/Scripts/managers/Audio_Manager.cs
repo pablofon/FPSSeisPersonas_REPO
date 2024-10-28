@@ -14,7 +14,10 @@ public class Audio_Manager : MonoBehaviour
     public AudioClip background;
     public AudioClip PickUp;
     public AudioClip Detected;
+    public AudioClip Door;
+    public AudioClip NoDoor;
     public AudioClip Light;
+
 
 
     private void Start()
