@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockedDoorInteractor : MonoBehaviour
+public class DoorInteractor : MonoBehaviour
 {
 
     Animator anim;
-    [SerializeField] GameObject navObstacle;
+    [SerializeField] bool open = false;
     [SerializeField] GameObject coll;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,22 +18,32 @@ public class LockedDoorInteractor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Opened();
     }
 
-    public void Unlocked()
+    public void Opened()
     {
-        if (GameManager.Instance.firstKey)
+        if (open)
         {
             anim.SetBool("open", true);
-            GameManager.Instance.firstKey = false;
-            navObstacle.SetActive(false);
             coll.SetActive(false);
         }
-        else
+        if (!open)
         {
-            Debug.Log("No tienes la llave");
+            anim.SetBool("open", false);
+            coll.SetActive(true);
         }
-        
+    }
+
+    public void Open()
+    {
+        if (!open)
+        {
+            open = true;
+        }
+        if (open)
+        {
+            open = false;
+        }
     }
 }

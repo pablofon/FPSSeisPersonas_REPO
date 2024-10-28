@@ -60,6 +60,12 @@ public class InteractSystem : MonoBehaviour
                 unlockDoorScript.Unlocked();
             }
 
+            if (hit.collider.CompareTag("Door"))
+            {
+                DoorInteractor openDoorScript = hit.collider.GetComponent<DoorInteractor>();
+                openDoorScript.Open();
+            }
+
 
         }
 
