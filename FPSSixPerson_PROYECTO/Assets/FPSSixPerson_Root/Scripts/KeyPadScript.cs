@@ -25,4 +25,9 @@ public class KeyPadScript : MonoBehaviour
             ans.text = "Incorrect";
         }
     }
+
+    public void ClosePad()
+    {
+        
+    }
 }
