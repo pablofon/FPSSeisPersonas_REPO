@@ -25,6 +25,7 @@ public class FPSController : MonoBehaviour
     [SerializeField] Transform playerCamera;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
+    public bool cursorNeeded = false;
 
     [Header("Cam Parameters")]
     [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
@@ -64,6 +65,15 @@ public class FPSController : MonoBehaviour
 
         //Añadir sensación de peso al caer del salto
         if (!isGrounded && controller.velocity.y < -1f) { velocityY = -8f; }
+
+        if (cursorNeeded)
+        {
+            cursorLock = false;
+        }
+        else
+        {
+            cursorLock = true;
+        }
 
     }
 
