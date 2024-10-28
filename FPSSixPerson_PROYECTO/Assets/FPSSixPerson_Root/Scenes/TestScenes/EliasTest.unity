@@ -1399,6 +1399,8 @@ MonoBehaviour:
   Door: {fileID: 8300000, guid: 7fcad7e1e7e991140a420fbc6ba11be3, type: 3}
   NoDoor: {fileID: 8300000, guid: bcd893d50b80a844aacaddd27adaf118, type: 3}
   Light: {fileID: 8300000, guid: 56466bb247646b949b63a5456fa61b0b, type: 3}
+  Panel: {fileID: 8300000, guid: 9fc86230ae5fdcb4d89edb42991a1056, type: 3}
+  Buttons: {fileID: 8300000, guid: 4122befb88918ed4aaa7b4621ca41e7f, type: 3}
 --- !u!4 &1189062402
 Transform:
   m_ObjectHideFlags: 0
