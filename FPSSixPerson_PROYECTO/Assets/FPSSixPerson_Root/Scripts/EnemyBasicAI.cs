@@ -75,6 +75,15 @@ public class EnemyBasicAI : MonoBehaviour
             agent.SetDestination(transform.position);
             Invoke(nameof(ResetPatrol), stunTime);
         }
+
+        if (GameManager.Instance.usingKeypad)
+        {
+            agent.SetDestination(transform.position);
+        }
+        else
+        {
+            ResetPatrol();
+        }
     }
 
     void Patroling()

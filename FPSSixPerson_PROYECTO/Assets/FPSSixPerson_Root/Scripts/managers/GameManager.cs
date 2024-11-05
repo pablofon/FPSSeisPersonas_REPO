@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Keys & Codes")]
     public bool firstKey = false;
+    public bool usingKeypad = false;
 
     private void Awake()
     {

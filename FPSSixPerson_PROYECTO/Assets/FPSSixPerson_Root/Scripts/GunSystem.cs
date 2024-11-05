@@ -54,7 +54,10 @@ public class GunSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameManager.Instance.usingKeypad)
+        {
+            canShoot = false;
+        }
     }
 
     void Shoot()

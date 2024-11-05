@@ -19,9 +19,13 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.firstKey)
+        if (GameManager.Instance.usingKeypad)
         {
-            //keyPannel.SetActive(true);
+            keypadOpen = true;
+        }
+        else
+        {
+            keypadOpen = false;
         }
 
         if (keypadOpen)

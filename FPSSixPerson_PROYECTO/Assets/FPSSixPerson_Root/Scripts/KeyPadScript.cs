@@ -28,6 +28,6 @@ public class KeyPadScript : MonoBehaviour
 
     public void ClosePad()
     {
-        
+        GameManager.Instance.usingKeypad = false;
     }
 }

@@ -66,7 +66,10 @@ public class InteractSystem : MonoBehaviour
                 openDoorScript.Open();
             }
 
-
+            if (hit.collider.CompareTag("CodeDoor"))
+            {
+                GameManager.Instance.usingKeypad = true;
+            }
         }
 
         if (!IsInvoking(nameof(ResetInteract)) && !canInteract) Invoke(nameof(ResetInteract), 0.01f);
