@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class KillCollider_controller : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log("Muerto");
-            SceneManager.LoadSceneAsync("GameOver");
-            
-        }
+            SceneManager.LoadScene(3);
 
+        }
     }
 }
