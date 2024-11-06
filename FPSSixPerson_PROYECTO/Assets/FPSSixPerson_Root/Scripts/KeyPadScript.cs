@@ -19,6 +19,7 @@ public class KeyPadScript : MonoBehaviour
         if (ans.text == answer)
         {
             ans.text = "Correct";
+            GameManager.Instance.correctCode = true;
         }
         else
         {
