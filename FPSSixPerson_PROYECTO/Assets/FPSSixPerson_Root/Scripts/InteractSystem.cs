@@ -27,6 +27,7 @@ public class InteractSystem : MonoBehaviour
     void Start()
     {
         canInteract = true;
+        gunSystem = GetComponent<GunSystem>();
     }
 
     // Update is called once per frame
@@ -74,7 +75,7 @@ public class InteractSystem : MonoBehaviour
 
             if (hit.collider.CompareTag("Cross"))
             {
-                //Debug.Log
+                Debug.Log("Cruz");
                 gunSystem.bulletsLeft += 1;
             }
         }

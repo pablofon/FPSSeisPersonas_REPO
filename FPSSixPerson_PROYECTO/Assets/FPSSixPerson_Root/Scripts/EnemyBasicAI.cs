@@ -67,7 +67,7 @@ public class EnemyBasicAI : MonoBehaviour
                     chaseAudioAlreadyPlayed = true;
                 }
             }
-            if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
+            //if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
         }
         
         if (stunned)
