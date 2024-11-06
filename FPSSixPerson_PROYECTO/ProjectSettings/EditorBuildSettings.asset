@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/FPSSixPerson_Root/Scenes/TestScenes/PabloTest.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/FPSSixPerson_Root/Scenes/DefinitiveScenes/MainMenu.unity
+    guid: 07829fadb5684474bb8c9242c72f532b
+  - enabled: 1
+    path: Assets/FPSSixPerson_Root/Scenes/DefinitiveScenes/Lvl1.unity
+    guid: c511717b5cc609a408dd2a5f3f6216ca
+  - enabled: 1
+    path: Assets/FPSSixPerson_Root/Scenes/DefinitiveScenes/Lvl2.unity
+    guid: e188b40395a5b2743a01a64ba5d67e89
+  - enabled: 1
+    path: Assets/FPSSixPerson_Root/Scenes/DefinitiveScenes/GameOver.unity
+    guid: def6d3c71fd73a44e8a93366a9045e6c
+  - enabled: 1
+    path: Assets/FPSSixPerson_Root/Scenes/DefinitiveScenes/WinMenu.unity
+    guid: 019bb8f51c56cbb4aa9cd13a12e2cf02
   m_configObjects: {}
