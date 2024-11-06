@@ -8,6 +8,7 @@ public class KeyPadScript : MonoBehaviour
 {
     [SerializeField] TMP_Text ans;
     [SerializeField] string answer;
+    [SerializeField] float resetTime = 0.5f;
 
     public void Number(int number)
     {
@@ -24,11 +25,17 @@ public class KeyPadScript : MonoBehaviour
         else
         {
             ans.text = "Incorrect";
+            Invoke(nameof(ResetAns), resetTime);
         }
     }
 
     public void ClosePad()
     {
         GameManager.Instance.usingKeypad = false;
+    }
+
+    public void ResetAns()
+    {
+        ans.text = "";
     }
 }
