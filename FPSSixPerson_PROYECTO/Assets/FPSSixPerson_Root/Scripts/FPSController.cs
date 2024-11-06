@@ -95,11 +95,15 @@ public class FPSController : MonoBehaviour
 
     void CamLook()
     {
-        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
+        if ( !GameManager.Instance.usingKeypad)
+        {
+             currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
         cameraCap -= currentMouseDelta.y * mouseSensitivity;
         cameraCap = Mathf.Clamp(cameraCap, -90.0f, 90.0f);
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        }
+       
     }
 
     void Movement()
