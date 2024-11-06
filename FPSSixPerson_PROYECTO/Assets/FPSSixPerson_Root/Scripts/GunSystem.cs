@@ -26,7 +26,7 @@ public class GunSystem : MonoBehaviour
     [Header("Bullet Management")]
     public int ammoSize; //Cantidad de balas máxima
     public int bulletsPerTap; //Cuántas balas se disparan por rayo
-    [SerializeField] int bulletsLeft; //Cuántas balas quedan dentro del cargador
+    public int bulletsLeft; //Cuántas balas quedan dentro del cargador
     [SerializeField] int bulletsShot; //Cuántas balas hemos disparado
 
     [Header("State Bools")]
@@ -47,7 +47,7 @@ public class GunSystem : MonoBehaviour
     {
         weaponAudio = GetComponent<AudioSource>();
 
-        bulletsLeft = ammoSize;
+        //bulletsLeft = ammoSize;
         canShoot = true;
     }
 
