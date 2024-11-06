@@ -17,7 +17,21 @@ public class CodeDoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameManager.Instance.correctCode)
+        {
+            open = true;
+        }
+
+        if (open)
+        {
+            anim.SetBool("open", true);
+            coll.SetActive(false);
+        }
+        if (!open)
+        {
+            anim.SetBool("open", false);
+            coll.SetActive(true);
+        }
     }
 
     public void Interacted()

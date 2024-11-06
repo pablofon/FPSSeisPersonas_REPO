@@ -25,7 +25,7 @@ public class FPSController : MonoBehaviour
     [SerializeField] Transform playerCamera;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundLayer;
-    public bool cursorNeeded = false;
+    //public bool cursorNeeded = false;
 
     [Header("Cam Parameters")]
     [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
@@ -53,6 +53,11 @@ public class FPSController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked; //Lockea el cursor en el centro de la cam
             Cursor.visible = false; //Hace el cursor invisible al jugador
         }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None; //Lockea el cursor en el centro de la cam
+            Cursor.visible = true; //Hace el cursor invisible al jugador
+        }
 
         anim = GetComponent<Animator>();
     }
@@ -66,7 +71,7 @@ public class FPSController : MonoBehaviour
         //Añadir sensación de peso al caer del salto
         if (!isGrounded && controller.velocity.y < -1f) { velocityY = -8f; }
 
-        if (cursorNeeded)
+        if (GameManager.Instance.usingKeypad)
         {
             cursorLock = false;
         }
@@ -75,15 +80,30 @@ public class FPSController : MonoBehaviour
             cursorLock = true;
         }
 
+        if (cursorLock)
+        {
+            Cursor.lockState = CursorLockMode.Locked; //Lockea el cursor en el centro de la cam
+            Cursor.visible = false; //Hace el cursor invisible al jugador
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None; //Lockea el cursor en el centro de la cam
+            Cursor.visible = true; //Hace el cursor invisible al jugador
+        }
+
     }
 
     void CamLook()
     {
-        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
+        if ( !GameManager.Instance.usingKeypad)
+        {
+             currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
         cameraCap -= currentMouseDelta.y * mouseSensitivity;
         cameraCap = Mathf.Clamp(cameraCap, -90.0f, 90.0f);
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
+        }
+       
     }
 
     void Movement()

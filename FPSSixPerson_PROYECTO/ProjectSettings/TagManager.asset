@@ -9,6 +9,8 @@ TagManager:
   - LockedDoor
   - Door
   - Audio
+  - CodeDoor
+  - Cross
   layers:
   - Default
   - TransparentFX

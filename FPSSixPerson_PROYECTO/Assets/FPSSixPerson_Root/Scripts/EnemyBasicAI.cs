@@ -67,13 +67,22 @@ public class EnemyBasicAI : MonoBehaviour
                     chaseAudioAlreadyPlayed = true;
                 }
             }
-            if (targetInSightRange && targetInAttackRange) { AttackTarget(); }
+            //if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
         }
         
         if (stunned)
         {
             agent.SetDestination(transform.position);
             Invoke(nameof(ResetPatrol), stunTime);
+        }
+
+        if (GameManager.Instance.usingKeypad)
+        {
+            agent.SetDestination(transform.position);
+        }
+        else
+        {
+            ResetPatrol();
         }
     }
 
