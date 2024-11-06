@@ -65,6 +65,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2464936259821090035, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: ammoSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464936259821090035, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: canShoot
       value: 0
       objectReference: {fileID: 0}

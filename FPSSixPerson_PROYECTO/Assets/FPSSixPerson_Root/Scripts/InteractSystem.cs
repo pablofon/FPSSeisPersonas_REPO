@@ -11,6 +11,7 @@ public class InteractSystem : MonoBehaviour
     [SerializeField] RaycastHit hit; //Almacén de la información de choque de los disparos
     //Declaración de layers contras las que SÍ chocará nuestro disparo
     [SerializeField] LayerMask interactableLayer;
+    GunSystem gunSystem;
 
     [Header("Interact Stats")]
     //public int damage; //Daño base del arma (por rayo impactado)
@@ -69,6 +70,12 @@ public class InteractSystem : MonoBehaviour
             if (hit.collider.CompareTag("CodeDoor"))
             {
                 GameManager.Instance.usingKeypad = true;
+            }
+
+            if (hit.collider.CompareTag("Cross"))
+            {
+                //Debug.Log
+                gunSystem.bulletsLeft += 1;
             }
         }
 
