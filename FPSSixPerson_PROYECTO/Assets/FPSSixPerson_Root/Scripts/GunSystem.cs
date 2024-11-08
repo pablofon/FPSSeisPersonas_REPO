@@ -98,7 +98,7 @@ public class GunSystem : MonoBehaviour
         bulletsShot++;
 
         //Resetear el disparo
-        if (!IsInvoking(nameof(ResetShoot)) && !canShoot) Invoke(nameof(ResetShoot), shootingCooldown);
+        if (!IsInvoking(nameof(ResetShoot)) && !canShoot) { Invoke(nameof(ResetShoot), shootingCooldown); }
 
     }
 
