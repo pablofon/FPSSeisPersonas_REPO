@@ -56,10 +56,7 @@ public class GunSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.usingKeypad)
-        {
-            canShoot = false;
-        }
+        
     }
 
     void Shoot()
@@ -133,7 +130,7 @@ public class GunSystem : MonoBehaviour
     #region New Input Events
     public void OnShoot(InputAction.CallbackContext context)
     {
-        if (context.started && canShoot)
+        if (context.started && canShoot && !GameManager.Instance.usingKeypad)
         {
             Debug.Log("Hola");
             if (!reloading && bulletsLeft > 0)
