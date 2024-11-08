@@ -64,6 +64,7 @@ public class GunSystem : MonoBehaviour
     {
         canShoot = false; //No podemos disparar porque YA ESTAMOS disparando
 
+
         //Opcional: Dispersión variable
         float spreadX = Random.Range(-spread, spread);
         float spreadY = Random.Range(-spread, spread);
