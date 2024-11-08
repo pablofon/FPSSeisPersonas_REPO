@@ -39,6 +39,7 @@ public class GunSystem : MonoBehaviour
     [Header("Graphics")]
     [SerializeField] GameObject muzzleFlash; //Referencia al FX o luz del cañón cuando dispara
     [SerializeField] GameObject hitGraphic; //Referencia al "gráfico" de impacto de las balas
+    [SerializeField] GameObject handCross;
 
     [Header("Sounf System")]
     [SerializeField] AudioClip[] weaponSoundLibrary;
@@ -56,7 +57,14 @@ public class GunSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (bulletsLeft > 0)
+        {
+            handCross.SetActive(true);
+        }
+        else
+        {
+            handCross.SetActive(false);
+        }
     }
 
     void Shoot()

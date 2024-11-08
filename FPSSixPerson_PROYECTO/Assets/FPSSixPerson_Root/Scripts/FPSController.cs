@@ -132,13 +132,13 @@ public class FPSController : MonoBehaviour
     {
         targetDir = context.ReadValue<Vector2>();
     }
-    public void OnJump(InputAction.CallbackContext context)
+    /*public void OnJump(InputAction.CallbackContext context)
     {
         if (context.started && isGrounded)
         {
             velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-    }
+    }*/
     public void OnCrouch()
     {
         if (!crouching)
