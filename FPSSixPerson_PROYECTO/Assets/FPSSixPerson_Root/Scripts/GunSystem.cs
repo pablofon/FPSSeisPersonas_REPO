@@ -85,6 +85,7 @@ public class GunSystem : MonoBehaviour
                 enemyDamageScript.TakeDamage(damage);
                 EnemyBasicAI enemyAIScript = hit.collider.GetComponent<EnemyBasicAI>();
                 enemyAIScript.TakeStun();
+                //Debug.Log("Le has dado");
             }
 
             

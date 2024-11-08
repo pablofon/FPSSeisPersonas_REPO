@@ -81,6 +81,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348882326568713097, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
+      propertyPath: stunTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348882326568713097, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
+        type: 3}
       propertyPath: sightRange
       value: 12
       objectReference: {fileID: 0}
@@ -147,27 +152,32 @@ PrefabInstance:
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Height
-      value: 2.1461914
+      value: 4.7986455
       objectReference: {fileID: 0}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Radius
-      value: 0.7677345
+      value: 2.3993227
       objectReference: {fileID: 0}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.037569046
+      value: -0.054673195
       objectReference: {fileID: 0}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.07309568
+      value: 0.19281721
       objectReference: {fileID: 0}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.028558493
+      value: 0.041668653
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

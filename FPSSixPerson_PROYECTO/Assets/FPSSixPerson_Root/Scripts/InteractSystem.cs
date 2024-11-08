@@ -77,6 +77,8 @@ public class InteractSystem : MonoBehaviour
             {
                 Debug.Log("Cruz");
                 gunSystem.bulletsLeft += 1;
+                CrossScript grabCrossScript = hit.collider.GetComponent<CrossScript>();
+                grabCrossScript.Grabbed();
             }
         }
 

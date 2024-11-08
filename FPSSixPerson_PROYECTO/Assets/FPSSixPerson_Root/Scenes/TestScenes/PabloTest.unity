@@ -1972,6 +1972,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5539216020864374013, guid: e8116b10a11c8904ea402901a2fc5cf7,
+        type: 3}
+      propertyPath: bulletsLeft
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7298795093546306323, guid: e8116b10a11c8904ea402901a2fc5cf7,
         type: 3}
       propertyPath: m_RootOrder

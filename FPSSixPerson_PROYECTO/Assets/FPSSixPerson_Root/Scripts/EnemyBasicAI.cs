@@ -57,7 +57,7 @@ public class EnemyBasicAI : MonoBehaviour
         {
             //Máquina de estados con booleanos: lógica del comportamiento del agente
             if (!targetInSightRange && !targetInAttackRange) { Patroling(); }
-            if (targetInSightRange && !targetInAttackRange) 
+            if (targetInSightRange /*&& !targetInAttackRange*/)
             { 
                 ChaseTarget();
 
@@ -69,8 +69,7 @@ public class EnemyBasicAI : MonoBehaviour
             }
             //if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
         }
-        
-        if (stunned)
+        else
         {
             agent.SetDestination(transform.position);
             Invoke(nameof(ResetPatrol), stunTime);
@@ -154,6 +153,7 @@ public class EnemyBasicAI : MonoBehaviour
     public void TakeStun()
     {
         stunned = true;
+        Debug.Log("stuneado");
     }
 
     void ResetPatrol()
