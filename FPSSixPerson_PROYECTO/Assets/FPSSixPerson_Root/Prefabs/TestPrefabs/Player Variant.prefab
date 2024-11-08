@@ -150,6 +150,26 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4135116260479004923, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.93309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135116260479004923, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4182542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135116260479004923, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.033455014
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135116260479004923, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.02041787
+      objectReference: {fileID: 0}
     - target: {fileID: 7245066221728414815, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
       propertyPath: m_ActionEvents.Array.size
