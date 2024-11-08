@@ -94,6 +94,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1852240272003036944, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49
+      objectReference: {fileID: 0}
     - target: {fileID: 2464936259821090035, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
       propertyPath: ammoSize
