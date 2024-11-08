@@ -71,7 +71,7 @@ public class FPSController : MonoBehaviour
         //Añadir sensación de peso al caer del salto
         if (!isGrounded && controller.velocity.y < -1f) { velocityY = -8f; }
 
-        if (GameManager.Instance.usingKeypad)
+        if (GameManager.Instance.usingKeypad || GameManager.Instance.gameOver)
         {
             cursorLock = false;
         }

@@ -12,6 +12,7 @@ public class KillCollider_controller : MonoBehaviour
         {
             Debug.Log("Muerto");
             SceneManager.LoadScene(3);
+            GameManager.Instance.gameOver = true;
 
         }
     }
