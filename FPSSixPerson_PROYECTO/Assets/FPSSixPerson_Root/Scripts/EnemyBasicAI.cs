@@ -57,7 +57,7 @@ public class EnemyBasicAI : MonoBehaviour
         {
             //Máquina de estados con booleanos: lógica del comportamiento del agente
             if (!targetInSightRange && !targetInAttackRange) { Patroling(); }
-            if (targetInSightRange /*&& !targetInAttackRange*/)
+            if (targetInSightRange && !targetInAttackRange)
             { 
                 ChaseTarget();
 
@@ -67,7 +67,7 @@ public class EnemyBasicAI : MonoBehaviour
                     chaseAudioAlreadyPlayed = true;
                 }
             }
-            //if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
+            if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
         }
         else
         {
@@ -81,7 +81,10 @@ public class EnemyBasicAI : MonoBehaviour
         }
         else
         {
-            ResetPatrol();
+            if (!stunned)
+            {
+                ResetPatrol();
+            }
         }
     }
 

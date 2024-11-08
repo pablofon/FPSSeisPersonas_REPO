@@ -1941,6 +1941,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7829895403637427198, guid: b06752f886a6eb5419343edc2509db1f,
         type: 3}
+      propertyPath: stunTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829895403637427198, guid: b06752f886a6eb5419343edc2509db1f,
+        type: 3}
       propertyPath: sightRange
       value: 12
       objectReference: {fileID: 0}
