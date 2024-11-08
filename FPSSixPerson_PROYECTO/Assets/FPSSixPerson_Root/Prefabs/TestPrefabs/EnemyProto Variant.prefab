@@ -79,6 +79,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyProto Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4291306229311289255, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4348882326568713097, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: stunTime

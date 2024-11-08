@@ -35,6 +35,7 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] float stunTime = 2f;
     [SerializeField] bool stunned = false;
     [SerializeField] bool chaseAudioAlreadyPlayed;
+    Collider coll;
 
     #endregion
 
@@ -44,6 +45,7 @@ public class EnemyBasicAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
         chaseAudioAlreadyPlayed = false;
+        coll = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -85,6 +87,14 @@ public class EnemyBasicAI : MonoBehaviour
             {
                 ResetPatrol();
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            stunned = true;
         }
     }
 

@@ -28,6 +28,8 @@ public class GunSystem : MonoBehaviour
     public int bulletsPerTap; //Cuántas balas se disparan por rayo
     public int bulletsLeft; //Cuántas balas quedan dentro del cargador
     [SerializeField] int bulletsShot; //Cuántas balas hemos disparado
+    [SerializeField] GameObject projectile;
+    [SerializeField] float projectileSpeed;
 
     [Header("State Bools")]
     [SerializeField] bool shooting; //Estamos en el proceso de disparo
@@ -64,7 +66,12 @@ public class GunSystem : MonoBehaviour
     {
         canShoot = false; //No podemos disparar porque YA ESTAMOS disparando
 
+        //Código de ataque: es variable al gusto del progrador
+        //Este atque solo es un ejemplo: disparo de bala física
+         Rigidbody rb = Instantiate(projectile, shootPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
+         rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse); 
 
+        /*
         //Opcional: Dispersión variable
         float spreadX = Random.Range(-spread, spread);
         float spreadY = Random.Range(-spread, spread);
@@ -83,6 +90,7 @@ public class GunSystem : MonoBehaviour
             {
                 //HACER DAÑO
                 EnemyInteractor enemyDamageScript = hit.collider.GetComponent<EnemyInteractor>();
+               
                 enemyDamageScript.TakeDamage(damage);
                 EnemyBasicAI enemyAIScript = hit.collider.GetComponent<EnemyBasicAI>();
                 enemyAIScript.TakeStun();
@@ -91,7 +99,7 @@ public class GunSystem : MonoBehaviour
 
             
 
-        }
+        }*/
         //Gráficos del disparo
         muzzleFlash.SetActive(true);
 
