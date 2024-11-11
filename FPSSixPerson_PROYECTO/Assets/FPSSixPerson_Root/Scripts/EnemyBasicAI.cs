@@ -37,7 +37,7 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] bool chaseAudioAlreadyPlayed;
     Collider coll;
 
-    Animator anim;
+    [SerializeField] Animator anim;
 
     #endregion
 
