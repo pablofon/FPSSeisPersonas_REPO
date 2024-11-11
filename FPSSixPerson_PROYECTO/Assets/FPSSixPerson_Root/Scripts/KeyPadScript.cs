@@ -41,6 +41,7 @@ public class KeyPadScript : MonoBehaviour
     public void ClosePad()
     {
         GameManager.Instance.usingKeypad = false;
+        audiomanager.PlaySFX(audiomanager.Panel);
     }
 
     public void ResetAns()
