@@ -13,6 +13,7 @@ TagManager:
   - Cross
   - bullet
   - Paper
+  - Vent
   layers:
   - Default
   - TransparentFX
