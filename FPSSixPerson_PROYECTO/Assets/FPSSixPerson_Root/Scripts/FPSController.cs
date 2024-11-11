@@ -35,6 +35,7 @@ public class FPSController : MonoBehaviour
     [Header("Movement Parameters")]
     [SerializeField] float speed = 6.0f;
     [SerializeField][Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
+    [SerializeField] bool inVent;
 
     [Header("Jump Parameters")]
     [SerializeField] float gravity = -9.8f; //-30f
@@ -91,6 +92,18 @@ public class FPSController : MonoBehaviour
             Cursor.visible = true; //Hace el cursor invisible al jugador
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Vent"))
+        {
+            inVent = true;
+        }
+        else
+        {
+            inVent = false;
+        }
     }
 
     void CamLook()
@@ -155,8 +168,12 @@ public class FPSController : MonoBehaviour
         }
         else
         {
-            crouching = false;
-            anim.SetBool("Crouching", false);
+            if (!inVent)
+            {
+                crouching = false;
+                anim.SetBool("Crouching", false);
+            }
+            
         }
     }
     #endregion
