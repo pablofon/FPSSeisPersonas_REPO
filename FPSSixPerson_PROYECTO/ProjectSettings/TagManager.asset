@@ -12,6 +12,7 @@ TagManager:
   - CodeDoor
   - Cross
   - bullet
+  - Paper
   layers:
   - Default
   - TransparentFX

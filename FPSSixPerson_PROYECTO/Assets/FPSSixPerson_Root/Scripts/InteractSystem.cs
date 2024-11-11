@@ -83,6 +83,13 @@ public class InteractSystem : MonoBehaviour
                 CrossScript grabCrossScript = hit.collider.GetComponent<CrossScript>();
                 grabCrossScript.Grabbed();
             }
+
+            if (hit.collider.CompareTag("Paper"))
+            {
+                PaperInteractor paperScript = hit.collider.GetComponent<PaperInteractor>();
+                paperScript.LookPaper();
+                GameManager.Instance.lookingPaper = true;
+            }
         }
 
         if (!IsInvoking(nameof(ResetInteract)) && !canInteract) Invoke(nameof(ResetInteract), 0.01f);

@@ -71,7 +71,7 @@ public class FPSController : MonoBehaviour
         //Añadir sensación de peso al caer del salto
         if (!isGrounded && controller.velocity.y < -1f) { velocityY = -8f; }
 
-        if (GameManager.Instance.usingKeypad || GameManager.Instance.gameOver)
+        if (GameManager.Instance.usingKeypad || GameManager.Instance.gameOver || GameManager.Instance.lookingPaper)
         {
             cursorLock = false;
         }
@@ -95,7 +95,7 @@ public class FPSController : MonoBehaviour
 
     void CamLook()
     {
-        if ( !GameManager.Instance.usingKeypad)
+        if ( !GameManager.Instance.usingKeypad && !GameManager.Instance.lookingPaper)
         {
              currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity, mouseSmoothTime);
         cameraCap -= currentMouseDelta.y * mouseSensitivity;
