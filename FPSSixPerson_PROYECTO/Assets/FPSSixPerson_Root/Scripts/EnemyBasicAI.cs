@@ -37,6 +37,8 @@ public class EnemyBasicAI : MonoBehaviour
     [SerializeField] bool chaseAudioAlreadyPlayed;
     Collider coll;
 
+    Animator anim;
+
     #endregion
 
     private void Awake()
@@ -46,6 +48,7 @@ public class EnemyBasicAI : MonoBehaviour
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
         chaseAudioAlreadyPlayed = false;
         coll = GetComponent<Collider>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -70,6 +73,8 @@ public class EnemyBasicAI : MonoBehaviour
                 }
             }
             if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
+
+            anim.SetBool("Walking", true);
         }
         else
         {
@@ -167,10 +172,14 @@ public class EnemyBasicAI : MonoBehaviour
     {
         stunned = true;
         Debug.Log("stuneado");
+        anim.SetBool("Stun", true);
     }
 
     void ResetPatrol()
     {
         stunned = false;
+        anim.SetBool("Stun", false);
     }
+
+
 }
