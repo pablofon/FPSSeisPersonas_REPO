@@ -119,6 +119,12 @@ public class FPSController : MonoBehaviour
         //Acción 1: Crear una información vectorial constante que "emule" el velocity de un RigidBody, se le tiene que aplicar la gravedad custom en el eje y
         //Acción 2: Le paso al Character Controller dicha velocidad mediante un método de librería interna (Move()) multiplicada por el delta time porque ejecuta en Update
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * speed + Vector3.up * velocityY;
+
+        if (crouching)
+        {
+            velocity /= 2;
+        }
+
         controller.Move(velocity * Time.deltaTime);
 
     }
@@ -145,6 +151,7 @@ public class FPSController : MonoBehaviour
         {
             crouching = true;
             anim.SetBool("Crouching", true);
+
         }
         else
         {
