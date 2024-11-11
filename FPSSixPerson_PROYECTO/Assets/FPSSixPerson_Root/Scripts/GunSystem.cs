@@ -12,7 +12,7 @@ public class GunSystem : MonoBehaviour
     [SerializeField] RaycastHit hit; //Almacén de la información de choque de los disparos
     //Declaración de layers contras las que SÍ chocará nuestro disparo
     [SerializeField] LayerMask interactableLayer;
-    [SerializeField] AudioSource weaponAudio;
+    Audio_Manager audiomanager;
 
     [Header("Weapon Stats")]
     public int damage; //Daño base del arma (por rayo impactado)
@@ -48,7 +48,7 @@ public class GunSystem : MonoBehaviour
 
     private void Awake()
     {
-        weaponAudio = GetComponent<AudioSource>();
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
 
         //bulletsLeft = ammoSize;
         canShoot = true;
@@ -74,7 +74,8 @@ public class GunSystem : MonoBehaviour
         //Código de ataque: es variable al gusto del progrador
         //Este atque solo es un ejemplo: disparo de bala física
          Rigidbody rb = Instantiate(projectile, shootPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-         rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse); 
+         rb.AddForce(transform.forward * projectileSpeed, ForceMode.Impulse);
+        
 
         /*
         //Opcional: Dispersión variable
@@ -143,7 +144,7 @@ public class GunSystem : MonoBehaviour
             Debug.Log("Hola");
             if (!reloading && bulletsLeft > 0)
             {
-                weaponAudio.PlayOneShot(weaponSoundLibrary[0]);
+                audiomanager.PlaySFX(audiomanager.Weapon);
                 Shoot();
             }
             else
@@ -158,8 +159,7 @@ public class GunSystem : MonoBehaviour
         {
             if (bulletsLeft < ammoSize && !reloading) 
             {
-                weaponAudio.PlayOneShot(weaponSoundLibrary[1]);
-                Reload(); 
+                 
             }
             else Debug.Log("Tienes el cargador a tope!");
         }

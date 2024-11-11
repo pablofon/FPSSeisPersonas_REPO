@@ -25,7 +25,7 @@ public class CrossScript : MonoBehaviour
 
     public void Grabbed()
     {
-        audiomanager.PlaySFX(audiomanager.PickUp);
+        audiomanager.PlaySFX(audiomanager.PickUp2);
         gameObject.SetActive(false);
         Invoke(nameof(RespawnCross), respawnTime);
     }

@@ -13,13 +13,17 @@ public class Audio_Manager : MonoBehaviour
     [Header("_________Clips_________")]
     public AudioClip background;
     public AudioClip PickUp;
+    public AudioClip PickUp2;
     public AudioClip Detected;
     public AudioClip Door;
     public AudioClip NoDoor;
     public AudioClip Light;
     public AudioClip Panel;
     public AudioClip Buttons;
-    
+    public AudioClip Incorrect;
+    public AudioClip correct;
+    public AudioClip Weapon;
+
 
 
 

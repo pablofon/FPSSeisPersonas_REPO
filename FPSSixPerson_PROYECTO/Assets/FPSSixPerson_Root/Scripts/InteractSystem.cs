@@ -12,6 +12,7 @@ public class InteractSystem : MonoBehaviour
     //Declaración de layers contras las que SÍ chocará nuestro disparo
     [SerializeField] LayerMask interactableLayer;
     GunSystem gunSystem;
+    Audio_Manager audiomanager;
 
     [Header("Interact Stats")]
     //public int damage; //Daño base del arma (por rayo impactado)
@@ -28,6 +29,7 @@ public class InteractSystem : MonoBehaviour
     {
         canInteract = true;
         gunSystem = GetComponent<GunSystem>();
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
     }
 
     // Update is called once per frame
@@ -71,6 +73,7 @@ public class InteractSystem : MonoBehaviour
             if (hit.collider.CompareTag("CodeDoor"))
             {
                 GameManager.Instance.usingKeypad = true;
+                audiomanager.PlaySFX(audiomanager.Panel);
             }
 
             if (hit.collider.CompareTag("Cross"))
