@@ -100,6 +100,7 @@ public class EnemyBasicAI : MonoBehaviour
         if (other.CompareTag("bullet"))
         {
             stunned = true;
+            TakeStun();
         }
     }
 
