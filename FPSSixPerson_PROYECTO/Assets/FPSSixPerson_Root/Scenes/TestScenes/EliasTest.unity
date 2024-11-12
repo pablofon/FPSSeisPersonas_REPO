@@ -709,6 +709,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3753079367317445363, guid: b06752f886a6eb5419343edc2509db1f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.45
+      objectReference: {fileID: 0}
     - target: {fileID: 7745906906276480976, guid: b06752f886a6eb5419343edc2509db1f,
         type: 3}
       propertyPath: m_Name
@@ -968,6 +973,7 @@ MonoBehaviour:
   firstKey: 0
   usingKeypad: 0
   correctCode: 0
+  lookingPaper: 0
 --- !u!4 &794342170
 Transform:
   m_ObjectHideFlags: 0

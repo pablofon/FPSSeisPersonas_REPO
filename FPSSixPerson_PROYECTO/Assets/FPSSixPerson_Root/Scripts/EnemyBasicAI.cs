@@ -74,7 +74,7 @@ public class EnemyBasicAI : MonoBehaviour
             }
             if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
 
-            anim.SetBool("Walking", true);
+            anim.SetBool("Walk", true);
         }
         else
         {
@@ -172,13 +172,13 @@ public class EnemyBasicAI : MonoBehaviour
     {
         stunned = true;
         Debug.Log("stuneado");
-        anim.SetBool("Stun", true);
+        anim.SetTrigger("Stun");
     }
 
     void ResetPatrol()
     {
         stunned = false;
-        anim.SetBool("Stun", false);
+        anim.SetTrigger("Stun");
     }
 
 
