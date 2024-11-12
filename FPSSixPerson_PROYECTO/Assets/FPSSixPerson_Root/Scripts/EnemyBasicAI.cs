@@ -178,7 +178,6 @@ public class EnemyBasicAI : MonoBehaviour
     void ResetPatrol()
     {
         stunned = false;
-        anim.SetTrigger("Stun");
     }
 
 
