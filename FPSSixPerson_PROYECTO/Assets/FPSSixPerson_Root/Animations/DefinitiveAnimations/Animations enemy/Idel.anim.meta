@@ -1,17 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: be077e849a15a61448f6bbebb47c290c
+guid: 949c84d1df1029e42a8f582f4c6e3f37
 NativeFormatImporter:
-=======
-<<<<<<<< HEAD:FPSSixPerson_PROYECTO/Assets/FPSSixPerson_Root/Props.meta
-guid: 0ff789f0dd4d1a144815daea30ceaf52
-folderAsset: yes
-DefaultImporter:
-========
-guid: be077e849a15a61448f6bbebb47c290c
-NativeFormatImporter:
->>>>>>>> 69fe2a37ba64ecc1e2975f4388ec6978dfe92798:FPSSixPerson_PROYECTO/Assets/FPSSixPerson_Root/Animations/DefinitiveAnimations/Animations enemy/Idel.anim.meta
->>>>>>> Stashed changes
   externalObjects: {}
   mainObjectFileID: 7400000
   userData: 
