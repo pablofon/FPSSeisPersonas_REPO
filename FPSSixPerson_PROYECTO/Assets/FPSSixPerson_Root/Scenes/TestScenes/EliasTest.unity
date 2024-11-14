@@ -1975,31 +1975,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6237810430769554004, guid: 2b040a73ce30fec478d5542fa4b2a19e,
-        type: 3}
-      propertyPath: Vent
-      value: 
-      objectReference: {fileID: 8300000, guid: 5ceda95fdd323034bb2138ab27537583, type: 3}
-    - target: {fileID: 6237810430769554004, guid: 2b040a73ce30fec478d5542fa4b2a19e,
-        type: 3}
-      propertyPath: Weapon
-      value: 
-      objectReference: {fileID: 8300000, guid: 3bfe1168b55aaf84da453603bc07b255, type: 3}
-    - target: {fileID: 6237810430769554004, guid: 2b040a73ce30fec478d5542fa4b2a19e,
-        type: 3}
-      propertyPath: PickUp2
-      value: 
-      objectReference: {fileID: 8300000, guid: d7c11d493fda8614c838336bbd4c0167, type: 3}
-    - target: {fileID: 6237810430769554004, guid: 2b040a73ce30fec478d5542fa4b2a19e,
-        type: 3}
-      propertyPath: correct
-      value: 
-      objectReference: {fileID: 8300000, guid: 6645ed88a866f1a43aa8e5b1aa0e9026, type: 3}
-    - target: {fileID: 6237810430769554004, guid: 2b040a73ce30fec478d5542fa4b2a19e,
-        type: 3}
-      propertyPath: Incorrect
-      value: 
-      objectReference: {fileID: 8300000, guid: d976a1ea59ae43b47bec85e7163b49e4, type: 3}
     - target: {fileID: 6625173996505759846, guid: 2b040a73ce30fec478d5542fa4b2a19e,
         type: 3}
       propertyPath: m_RootOrder

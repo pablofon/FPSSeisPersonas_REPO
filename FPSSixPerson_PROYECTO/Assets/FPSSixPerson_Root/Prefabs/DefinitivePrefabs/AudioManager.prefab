@@ -160,7 +160,7 @@ Transform:
   - {fileID: 7503476322463869676}
   - {fileID: 9042946840115565587}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6237810430769554004
 MonoBehaviour:
@@ -178,12 +178,18 @@ MonoBehaviour:
   SFXSource: {fileID: 4149023612554951728}
   background: {fileID: 8300000, guid: 2467852e3e8da844da792a4e56828409, type: 3}
   PickUp: {fileID: 8300000, guid: bae2ccdf349a3a54694b992647bbc9e9, type: 3}
+  PickUp2: {fileID: 8300000, guid: d7c11d493fda8614c838336bbd4c0167, type: 3}
   Detected: {fileID: 8300000, guid: e4d7affecfcc35c4e8463ea6fcac5255, type: 3}
   Door: {fileID: 8300000, guid: 7fcad7e1e7e991140a420fbc6ba11be3, type: 3}
   NoDoor: {fileID: 8300000, guid: bcd893d50b80a844aacaddd27adaf118, type: 3}
   Light: {fileID: 8300000, guid: 56466bb247646b949b63a5456fa61b0b, type: 3}
   Panel: {fileID: 8300000, guid: 9fc86230ae5fdcb4d89edb42991a1056, type: 3}
   Buttons: {fileID: 8300000, guid: 4122befb88918ed4aaa7b4621ca41e7f, type: 3}
+  Incorrect: {fileID: 8300000, guid: d976a1ea59ae43b47bec85e7163b49e4, type: 3}
+  correct: {fileID: 8300000, guid: 6645ed88a866f1a43aa8e5b1aa0e9026, type: 3}
+  Weapon: {fileID: 8300000, guid: 3bfe1168b55aaf84da453603bc07b255, type: 3}
+  Vent: {fileID: 8300000, guid: 5ceda95fdd323034bb2138ab27537583, type: 3}
+  Walk: {fileID: 8300000, guid: 97f5f2c9e1847d4498a7d624d741daf5, type: 3}
 --- !u!1 &6103443580304892748
 GameObject:
   m_ObjectHideFlags: 0
