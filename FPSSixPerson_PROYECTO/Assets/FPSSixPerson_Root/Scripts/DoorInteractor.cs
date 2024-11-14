@@ -9,13 +9,19 @@ public class DoorInteractor : MonoBehaviour
     [SerializeField] bool open = false;
     [SerializeField] GameObject coll;
     Collider collid;
-    
+    Audio_Manager audiomanager;
+
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         collid = GetComponent<Collider>();
+    }
+
+    private void Awake()
+    {
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
     }
 
     // Update is called once per frame
@@ -42,6 +48,7 @@ public class DoorInteractor : MonoBehaviour
     {
         if (!open)
         {
+            audiomanager.PlaySFX(audiomanager.Vent);
             open = true;
         }
         else
