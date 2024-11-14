@@ -189,7 +189,7 @@ MonoBehaviour:
   correct: {fileID: 8300000, guid: 6645ed88a866f1a43aa8e5b1aa0e9026, type: 3}
   Weapon: {fileID: 8300000, guid: 3bfe1168b55aaf84da453603bc07b255, type: 3}
   Vent: {fileID: 8300000, guid: 5ceda95fdd323034bb2138ab27537583, type: 3}
-  Walk: {fileID: 8300000, guid: 97f5f2c9e1847d4498a7d624d741daf5, type: 3}
+  Walk: {fileID: 8300000, guid: 59a01f0ea4253fa41a8d6c018de08d9f, type: 3}
 --- !u!1 &6103443580304892748
 GameObject:
   m_ObjectHideFlags: 0

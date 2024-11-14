@@ -74,6 +74,7 @@ public class EnemyBasicAI : MonoBehaviour
             }
             if (targetInSightRange && targetInAttackRange) { ChaseTarget(); }
 
+            
             anim.SetBool("Walk", true);
         }
         else
