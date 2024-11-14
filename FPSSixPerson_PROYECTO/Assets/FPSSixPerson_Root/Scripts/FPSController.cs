@@ -175,6 +175,7 @@ public class FPSController : MonoBehaviour
     }*/
     public void OnCrouch()
     {
+        WalkAudioAlreadyPlayed = false;
         if (!crouching)
         {
             crouching = true;
