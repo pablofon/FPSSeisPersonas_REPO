@@ -9,6 +9,7 @@ public class LockedDoorInteractor : MonoBehaviour
     [SerializeField] GameObject navObstacle;
     [SerializeField] GameObject coll;
     Audio_Manager audiomanager;
+    [SerializeField] bool DoorAudioAlreadyPlayed;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class LockedDoorInteractor : MonoBehaviour
     private void Awake()
     {
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
+        DoorAudioAlreadyPlayed = false;
     }
     // Update is called once per frame
     void Update()
@@ -36,7 +38,11 @@ public class LockedDoorInteractor : MonoBehaviour
         }
         else
         {
-            audiomanager.PlaySFX(audiomanager.NoDoor);
+            if (!DoorAudioAlreadyPlayed)
+            {
+                audiomanager.PlaySFX(audiomanager.NoDoor);
+                DoorAudioAlreadyPlayed = true;
+            }
             Debug.Log("No tienes la llave");
         }
         

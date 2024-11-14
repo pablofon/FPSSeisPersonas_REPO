@@ -25,7 +25,17 @@ public class Audio_Manager : MonoBehaviour
     public AudioClip Weapon;
     public AudioClip Vent;
     public AudioClip Walk;
-    
+
+    [Header("_________Voicelines_________")]
+
+    public AudioClip Nokey;
+
+    public AudioClip Goin;
+
+    public AudioClip EnemyChase;
+
+    public AudioClip Cinta;
+
 
 
 
