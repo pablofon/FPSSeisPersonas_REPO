@@ -23,6 +23,7 @@ public class InteractSystem : MonoBehaviour
     //public float reloadTime; //Tiempo de recarga
     public bool allowButtonHold; //Si el disparo es por tap input o por hold input
     [SerializeField] bool canInteract;
+    [SerializeField] GameObject lantern;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class InteractSystem : MonoBehaviour
         canInteract = true;
         gunSystem = GetComponent<GunSystem>();
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
+        lantern.SetActive(false);
     }
 
     // Update is called once per frame
@@ -89,6 +91,14 @@ public class InteractSystem : MonoBehaviour
                 PaperInteractor paperScript = hit.collider.GetComponent<PaperInteractor>();
                 paperScript.LookPaper();
                 GameManager.Instance.lookingPaper = true;
+            }
+
+            if (hit.collider.CompareTag("lantern"))
+            {
+                Debug.Log("Farol");
+                LanternScript grabLanternScript = hit.collider.GetComponent<LanternScript>();
+                grabLanternScript.Grabbed();
+                lantern.SetActive(true);
             }
         }
 
