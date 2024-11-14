@@ -173,12 +173,13 @@ public class EnemyBasicAI : MonoBehaviour
     {
         stunned = true;
         Debug.Log("stuneado");
-        anim.SetTrigger("Stun");
+        anim.SetBool("Stun", true);
     }
 
     void ResetPatrol()
     {
         stunned = false;
+        anim.SetBool("Stun", false);
     }
 
 
