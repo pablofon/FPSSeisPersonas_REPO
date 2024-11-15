@@ -15,6 +15,7 @@ TagManager:
   - Paper
   - Vent
   - lantern
+  - Cinta
   layers:
   - Default
   - TransparentFX

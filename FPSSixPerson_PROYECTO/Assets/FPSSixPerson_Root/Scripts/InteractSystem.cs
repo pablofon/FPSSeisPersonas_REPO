@@ -100,6 +100,12 @@ public class InteractSystem : MonoBehaviour
                 grabLanternScript.Grabbed();
                 lantern.SetActive(true);
             }
+
+            if (hit.collider.CompareTag("Cinta"))
+            {
+                TapeScript playTapeAudio = hit.collider.GetComponent<TapeScript>();
+                playTapeAudio.PlayTape();
+            }
         }
 
         if (!IsInvoking(nameof(ResetInteract)) && !canInteract) Invoke(nameof(ResetInteract), 0.01f);
