@@ -30,7 +30,7 @@ public class LockedDoorInteractor : MonoBehaviour
     {
         if (GameManager.Instance.firstKey)
         {
-            anim.SetBool("open", true);
+            anim.SetBool("Open", true);
             audiomanager.PlaySFX(audiomanager.Door);
             GameManager.Instance.firstKey = false;
             navObstacle.SetActive(false);

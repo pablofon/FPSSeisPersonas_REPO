@@ -34,12 +34,12 @@ public class DoorInteractor : MonoBehaviour
     {
         if (open)
         {
-            anim.SetBool("open", true);
+            anim.SetBool("Open", true);
             coll.SetActive(false);
         }
         if (!open)
         {
-            anim.SetBool("open", false);
+            anim.SetBool("Open", false);
             coll.SetActive(true);
         }
     }
