@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5941029745653099612}
   m_Layer: 6
   m_Name: OtherSideColl
-  m_TagString: Untagged
+  m_TagString: OtherSide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
