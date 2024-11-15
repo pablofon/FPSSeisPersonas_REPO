@@ -1135,6 +1135,7 @@ MonoBehaviour:
   usingKeypad: 0
   correctCode: 0
   lookingPaper: 0
+  shrek: 0
 --- !u!4 &794342170
 Transform:
   m_ObjectHideFlags: 0
