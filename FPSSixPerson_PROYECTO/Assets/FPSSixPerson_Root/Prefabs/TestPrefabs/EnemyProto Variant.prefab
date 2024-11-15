@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4386223001775601505}
   - component: {fileID: 887387670536254425}
   - component: {fileID: 197518681255070771}
+  - component: {fileID: 5688476584766570588}
   m_Layer: 0
   m_Name: Danger
   m_TagString: Untagged
@@ -48,12 +49,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.782907, y: 3.8135886, z: 10.3180685}
-  m_Center: {x: 0.11193991, y: 1.4067943, z: -0.2544675}
+  m_Size: {x: 14.313572, y: 1.2330503, z: 12.408025}
+  m_Center: {x: -1.0373745, y: 0.11652517, z: 0.32478952}
 --- !u!114 &197518681255070771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +72,19 @@ MonoBehaviour:
   blendDistance: 1
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 0e62a609d81965741b83ea473a6fb706, type: 2}
+--- !u!114 &5688476584766570588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045777896251693913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88cd38fe35b16524e8f2c2559dfdf579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DangerAudioAlreadyPlayed: 0
 --- !u!1 &5183246695253887049
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shrek 2_0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
         type: 3}
       propertyPath: m_Materials.Array.data[2]
@@ -512,7 +531,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: abbcd0dad9f40154393421c8b7d7388c, type: 3}
+    - {fileID: 7869873546869171050, guid: abbcd0dad9f40154393421c8b7d7388c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abbcd0dad9f40154393421c8b7d7388c, type: 3}
