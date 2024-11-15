@@ -30,6 +30,8 @@ public class Audio_Manager : MonoBehaviour
 
     public AudioClip Nokey;
 
+    public AudioClip NoCode;
+
     
 
 
