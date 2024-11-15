@@ -189,7 +189,13 @@ MonoBehaviour:
   correct: {fileID: 8300000, guid: 6645ed88a866f1a43aa8e5b1aa0e9026, type: 3}
   Weapon: {fileID: 8300000, guid: 3bfe1168b55aaf84da453603bc07b255, type: 3}
   Vent: {fileID: 8300000, guid: 5ceda95fdd323034bb2138ab27537583, type: 3}
-  Walk: {fileID: 8300000, guid: 59a01f0ea4253fa41a8d6c018de08d9f, type: 3}
+  Walk: {fileID: 8300000, guid: 97f5f2c9e1847d4498a7d624d741daf5, type: 3}
+  Nokey: {fileID: 0}
+  Cinta1: {fileID: 8300000, guid: c63690b7f7afae54493460b1fdb664be, type: 3}
+  Cinta2: {fileID: 8300000, guid: a6630f2017d732747a5460f7d52a1ebf, type: 3}
+  Cinta3: {fileID: 8300000, guid: 2e04b7654bfa99143ad6f6a6dd3db169, type: 3}
+  Cinta4: {fileID: 8300000, guid: 703702edce1676b45a563d9e75b7365f, type: 3}
+  Cinta5: {fileID: 8300000, guid: 00ed631fd80f5d943b1511150b7d9415, type: 3}
 --- !u!1 &6103443580304892748
 GameObject:
   m_ObjectHideFlags: 0

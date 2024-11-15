@@ -3,7 +3,31 @@ guid: 40e214c5ba9f07a4dbce18785bbf9b3b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - SFXSource: {instanceID: 0}
+  - background: {instanceID: 0}
+  - PickUp: {instanceID: 0}
+  - PickUp2: {instanceID: 0}
+  - Detected: {instanceID: 0}
+  - Door: {instanceID: 0}
+  - NoDoor: {instanceID: 0}
+  - Light: {instanceID: 0}
+  - Panel: {instanceID: 0}
+  - Buttons: {instanceID: 0}
+  - Incorrect: {instanceID: 0}
+  - correct: {instanceID: 0}
+  - Weapon: {instanceID: 0}
+  - Vent: {instanceID: 0}
+  - Walk: {instanceID: 0}
+  - Nokey: {instanceID: 0}
+  - Goin: {instanceID: 0}
+  - EnemyChase: {instanceID: 0}
+  - Cinta1: {fileID: 8300000, guid: c63690b7f7afae54493460b1fdb664be, type: 3}
+  - Cinta2: {fileID: 8300000, guid: a6630f2017d732747a5460f7d52a1ebf, type: 3}
+  - Cinta3: {fileID: 8300000, guid: 2e04b7654bfa99143ad6f6a6dd3db169, type: 3}
+  - Cinta4: {fileID: 8300000, guid: 703702edce1676b45a563d9e75b7365f, type: 3}
+  - Cinta5: {fileID: 8300000, guid: 00ed631fd80f5d943b1511150b7d9415, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

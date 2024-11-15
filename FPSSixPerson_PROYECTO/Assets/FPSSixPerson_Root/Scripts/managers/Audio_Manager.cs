@@ -30,11 +30,15 @@ public class Audio_Manager : MonoBehaviour
 
     public AudioClip Nokey;
 
-    public AudioClip Goin;
+    public AudioClip Cinta1;
 
-    public AudioClip EnemyChase;
+    public AudioClip Cinta2;
 
-    public AudioClip Cinta;
+    public AudioClip Cinta3;
+
+    public AudioClip Cinta4;
+
+    public AudioClip Cinta5;
 
 
 
