@@ -13,16 +13,26 @@ public class EnemyInteractor : MonoBehaviour
     [SerializeField] Material baseMat;
     [SerializeField] Material damagedMat;
     [SerializeField] float feedbackResetTime = 0.1f;
+    [SerializeField] GameObject body;
+    [SerializeField] GameObject shrek;
+
 
     private void Start()
     {
         enemyRend = GetComponent<MeshRenderer>();
         //enemyHitPoints = enemyMaxHP;
+        body.SetActive(true);
+        shrek.SetActive(false);
     }
 
     private void Update()
     {
        // if ( enemyHitPoints <= 0) { gameObject.SetActive(false); }
+       if (GameManager.Instance.shrek)
+        {
+            body.SetActive(false);
+            shrek.SetActive(true);
+        }
     }
 
     public void TakeDamage(int damage)

@@ -9,6 +9,7 @@ public class KeyPadScript : MonoBehaviour
     Audio_Manager audiomanager;
     [SerializeField] TMP_Text ans;
     [SerializeField] string answer;
+    [SerializeField] string shrekCode;
     [SerializeField] float resetTime = 0.5f;
 
     private void Awake()
@@ -32,10 +33,23 @@ public class KeyPadScript : MonoBehaviour
         }
         else
         {
-            ans.text = "Incorrect";
-            Invoke(nameof(ResetAns), resetTime);
-            audiomanager.PlaySFX(audiomanager.Incorrect);
+            if (ans.text == shrekCode)
+            {
+                ans.text = "Incorrect";
+                Invoke(nameof(ResetAns), resetTime);
+                audiomanager.PlaySFX(audiomanager.Incorrect);
+                GameManager.Instance.shrek = true;
+            }
+            else
+            {
+                ans.text = "Incorrect";
+                Invoke(nameof(ResetAns), resetTime);
+                audiomanager.PlaySFX(audiomanager.Incorrect);
+            }
+            
         }
+
+       
     }
 
     public void ClosePad()

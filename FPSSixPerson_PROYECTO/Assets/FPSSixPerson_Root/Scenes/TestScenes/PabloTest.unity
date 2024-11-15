@@ -3225,6 +3225,11 @@ PrefabInstance:
       propertyPath: answer
       value: 954
       objectReference: {fileID: 0}
+    - target: {fileID: 4512525683907567558, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: shrekCode
+      value: 2001
+      objectReference: {fileID: 0}
     - target: {fileID: 6188183169021551200, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
         type: 3}
       propertyPath: m_Name

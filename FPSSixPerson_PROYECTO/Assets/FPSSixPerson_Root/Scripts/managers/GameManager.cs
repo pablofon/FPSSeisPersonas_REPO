@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool usingKeypad = false;
     public bool correctCode= false;
     public bool lookingPaper = false;
+    public bool shrek = false;
 
     private void Awake()
     {
