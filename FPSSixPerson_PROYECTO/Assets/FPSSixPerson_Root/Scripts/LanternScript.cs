@@ -24,7 +24,7 @@ public class LanternScript : MonoBehaviour
 
     public void Grabbed()
     {
-        audiomanager.PlaySFX(audiomanager.PickUp2);
+        audiomanager.PlaySFX(audiomanager.Light);
         gameObject.SetActive(false);
     }
 }
