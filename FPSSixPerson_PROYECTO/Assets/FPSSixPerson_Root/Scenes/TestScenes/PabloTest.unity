@@ -2773,6 +2773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 5715346130941090471, guid: e684ae26830947f4fa642cd039e672f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6220029225888157710, guid: e684ae26830947f4fa642cd039e672f2,
         type: 3}
       propertyPath: m_RootOrder
