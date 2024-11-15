@@ -1,110 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2034783261605303768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4766802154010323259}
-  - component: {fileID: 4942637266352361719}
-  - component: {fileID: 7565381716488969539}
-  - component: {fileID: 8345573201654089209}
-  m_Layer: 0
-  m_Name: Shrek
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4766802154010323259
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034783261605303768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9334, y: 3.2629, z: 0.047302}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3658171710287564550}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4942637266352361719
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034783261605303768}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7565381716488969539
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034783261605303768}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: eee3c1e35acd8d944aa0bea252cea7a8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8345573201654089209
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034783261605303768}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5183246695253887049
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,11 +280,6 @@ PrefabInstance:
       propertyPath: body
       value: 
       objectReference: {fileID: 4566172148464189513}
-    - target: {fileID: 7238539180791918400, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
-        type: 3}
-      propertyPath: shrek
-      value: 
-      objectReference: {fileID: 2034783261605303768}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Height
@@ -434,7 +324,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7077225138106482545, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4766802154010323259}
+      addedObject: {fileID: 6575043557651965086}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6392595cd56c6ac409bd804e6fe9cb2c, type: 3}
 --- !u!4 &3658171710287564550 stripped
@@ -442,4 +332,118 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7077225138106482545, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
     type: 3}
   m_PrefabInstance: {fileID: 5833064275939160183}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6680393209869075317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3658171710287564550}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.04242604
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.04242604
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.04242604
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_Name
+      value: Shrek 2_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
+    - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
+    - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
+    - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: abbcd0dad9f40154393421c8b7d7388c, type: 3}
+--- !u!4 &6575043557651965086 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6680393209869075317}
   m_PrefabAsset: {fileID: 0}
