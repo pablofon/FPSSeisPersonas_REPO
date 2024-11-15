@@ -106,6 +106,11 @@ public class InteractSystem : MonoBehaviour
                 TapeScript playTapeAudio = hit.collider.GetComponent<TapeScript>();
                 playTapeAudio.PlayTape();
             }
+
+            if (hit.collider.CompareTag("OtherSide"))
+            {
+
+            }
         }
 
         if (!IsInvoking(nameof(ResetInteract)) && !canInteract) Invoke(nameof(ResetInteract), 0.01f);
