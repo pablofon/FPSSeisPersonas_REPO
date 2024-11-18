@@ -1244,7 +1244,7 @@ GameObject:
   - component: {fileID: 1197311526}
   - component: {fileID: 1197311525}
   - component: {fileID: 1197311529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Techo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2808,6 +2808,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 285934922566581394, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1779295554400808310, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
         type: 3}
       propertyPath: m_AnchoredPosition.x

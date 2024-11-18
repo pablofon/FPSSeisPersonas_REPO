@@ -179,7 +179,7 @@ public class FPSController : MonoBehaviour
     }*/
     public void OnCrouch()
     {
-        inVent = Physics.CheckSphere(ceilingCheck.position, 0.2f, groundLayer);
+        inVent = Physics.CheckSphere(ceilingCheck.position, 0.5f, groundLayer);
 
         WalkAudioAlreadyPlayed = false;
         if (!crouching)
