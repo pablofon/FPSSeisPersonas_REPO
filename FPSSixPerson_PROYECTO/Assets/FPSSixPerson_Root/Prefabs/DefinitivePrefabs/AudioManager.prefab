@@ -191,6 +191,7 @@ MonoBehaviour:
   Vent: {fileID: 8300000, guid: 5ceda95fdd323034bb2138ab27537583, type: 3}
   Walk: {fileID: 8300000, guid: 97f5f2c9e1847d4498a7d624d741daf5, type: 3}
   Danger: {fileID: 8300000, guid: 5530be66fd4b01944a1d38e281f70217, type: 3}
+  Paper: {fileID: 8300000, guid: 50acfc4517e1426498703e83b17991d0, type: 3}
   Nokey: {fileID: 0}
   NoCode: {fileID: 0}
 --- !u!1 &6103443580304892748

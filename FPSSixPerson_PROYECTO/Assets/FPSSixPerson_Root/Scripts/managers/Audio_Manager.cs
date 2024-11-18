@@ -26,6 +26,7 @@ public class Audio_Manager : MonoBehaviour
     public AudioClip Vent;
     public AudioClip Walk;
     public AudioClip Danger;
+    public AudioClip Paper;
 
     [Header("_________Voicelines_________")]
 
