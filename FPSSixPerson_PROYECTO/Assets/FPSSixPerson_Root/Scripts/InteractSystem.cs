@@ -117,6 +117,11 @@ public class InteractSystem : MonoBehaviour
             }
         }
 
+        if (GameManager.Instance.lookingPaper)
+        {
+            GameManager.Instance.lookingPaper = false;
+        }
+
         if (!IsInvoking(nameof(ResetInteract)) && !canInteract) Invoke(nameof(ResetInteract), 0.01f);
     }
 

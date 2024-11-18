@@ -20,7 +20,10 @@ public class PaperInteractor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!GameManager.Instance.lookingPaper)
+        {
+            StopLooking();
+        }
     }
 
     public void LookPaper()
