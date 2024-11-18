@@ -149,6 +149,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &5927670164795785942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3391143554396283467}
+  m_Layer: 0
+  m_Name: CeilingCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3391143554396283467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927670164795785942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.967, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7298795093546306323}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3451417010628466305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -489,6 +520,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 1c296947519a8ef4380c5302267cf26d, type: 3}
     - target: {fileID: 3515574428028177146, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
+      propertyPath: ceilingCheck
+      value: 
+      objectReference: {fileID: 3391143554396283467}
+    - target: {fileID: 3515574428028177146, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
       propertyPath: mouseSensitivity
       value: 0.5
       objectReference: {fileID: 0}
@@ -676,6 +712,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7114131031362865364}
+    - targetCorrespondingSourceObject: {fileID: 837826344483728157, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3391143554396283467}
     - targetCorrespondingSourceObject: {fileID: 1852240272003036944, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
       insertIndex: 0
@@ -743,6 +783,7 @@ MonoBehaviour:
   allowButtonHold: 0
   canInteract: 0
   lantern: {fileID: 2532303569412762576}
+  textOtherSide: {fileID: 0}
 --- !u!114 &6783509247927429876 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3515574428028177146, guid: f14ad1784d9838743abe171ccbcae1ba,

@@ -18,7 +18,11 @@ public class FPSController : MonoBehaviour
     Vector2 currentDirVelocity;
     Vector3 velocity;
     Animator anim;
+    [Header("Crouch Parameters")]
     bool crouching;
+    [SerializeField] Transform ceilingCheck;
+
+
 
     [SerializeField] bool WalkAudioAlreadyPlayed;
     Audio_Manager audiomanager;
@@ -105,14 +109,14 @@ public class FPSController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Vent"))
+        /*if (other.CompareTag("Vent"))
         {
             inVent = true;
         }
         else
         {
             inVent = false;
-        }
+        }*/
     }
 
     void CamLook()
@@ -175,6 +179,8 @@ public class FPSController : MonoBehaviour
     }*/
     public void OnCrouch()
     {
+        inVent = Physics.CheckSphere(ceilingCheck.position, 0.2f, groundLayer);
+
         WalkAudioAlreadyPlayed = false;
         if (!crouching)
         {
