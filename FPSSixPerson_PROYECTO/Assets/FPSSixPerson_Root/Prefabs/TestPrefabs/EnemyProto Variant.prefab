@@ -365,6 +365,11 @@ PrefabInstance:
       propertyPath: body
       value: 
       objectReference: {fileID: 4566172148464189513}
+    - target: {fileID: 7238539180791918400, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
+        type: 3}
+      propertyPath: shrek
+      value: 
+      objectReference: {fileID: 5797522413166050852}
     - target: {fileID: 8968410880543488930, guid: 6392595cd56c6ac409bd804e6fe9cb2c,
         type: 3}
       propertyPath: m_Height
@@ -512,6 +517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d690370f9490639449ef0741f241466d, type: 2}
+    - target: {fileID: 8837114378381074378, guid: abbcd0dad9f40154393421c8b7d7388c,
+        type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 65c3a5b457887fc42b92ed6943e99e32, type: 2}
@@ -537,6 +547,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abbcd0dad9f40154393421c8b7d7388c, type: 3}
+--- !u!1 &5797522413166050852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: abbcd0dad9f40154393421c8b7d7388c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6680393209869075317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6575043557651965086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abbcd0dad9f40154393421c8b7d7388c,
