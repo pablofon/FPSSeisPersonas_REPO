@@ -816,6 +816,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6385e2ebcc270154193151cb623ee44e, type: 3}
+--- !u!1 &978626931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2206323693019315491, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6359909956277735888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &990688711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1965,6 +1971,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2039605557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2510034797314959762, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+    type: 3}
+  m_PrefabInstance: {fileID: 6359909956277735888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2039694880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2051,6 +2063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LockedDoorProto
       objectReference: {fileID: 0}
+    - target: {fileID: 3610664699757892265, guid: 28cdea6df0ff56947b14f15278c7c41b,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 978626931}
     - target: {fileID: 8649800521677559919, guid: 28cdea6df0ff56947b14f15278c7c41b,
         type: 3}
       propertyPath: m_RootOrder
@@ -3245,6 +3262,16 @@ PrefabInstance:
       propertyPath: bulletsLeft
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6793800264992601329, guid: e8116b10a11c8904ea402901a2fc5cf7,
+        type: 3}
+      propertyPath: keyText
+      value: 
+      objectReference: {fileID: 978626931}
+    - target: {fileID: 6793800264992601329, guid: e8116b10a11c8904ea402901a2fc5cf7,
+        type: 3}
+      propertyPath: textOtherSide
+      value: 
+      objectReference: {fileID: 2039605557}
     - target: {fileID: 7298795093546306323, guid: e8116b10a11c8904ea402901a2fc5cf7,
         type: 3}
       propertyPath: m_RootOrder

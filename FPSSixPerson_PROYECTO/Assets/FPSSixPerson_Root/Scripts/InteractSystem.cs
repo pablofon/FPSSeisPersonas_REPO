@@ -24,6 +24,8 @@ public class InteractSystem : MonoBehaviour
     public bool allowButtonHold; //Si el disparo es por tap input o por hold input
     [SerializeField] bool canInteract;
     [SerializeField] GameObject lantern;
+    [SerializeField] GameObject textOtherSide;
+    float resetTextTime = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class InteractSystem : MonoBehaviour
         gunSystem = GetComponent<GunSystem>();
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
         lantern.SetActive(false);
+        textOtherSide.SetActive(false);
     }
 
     // Update is called once per frame
@@ -109,7 +112,8 @@ public class InteractSystem : MonoBehaviour
 
             if (hit.collider.CompareTag("OtherSide"))
             {
-
+                textOtherSide.SetActive(true);
+                Invoke(nameof(ResetText), resetTextTime);
             }
         }
 
@@ -127,5 +131,10 @@ public class InteractSystem : MonoBehaviour
     void ResetInteract()
     {
         canInteract = true;
+    }
+
+    void ResetText()
+    {
+        textOtherSide.SetActive(false);
     }
 }
