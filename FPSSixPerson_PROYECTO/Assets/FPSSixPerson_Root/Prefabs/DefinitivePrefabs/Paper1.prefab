@@ -121,20 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3943396274597571778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2520558681276342884, guid: 1de9e9751bedaf44da5e5c278ad0e67f,
-          type: 3}
-        m_TargetAssemblyTypeName: PaperInteractor, Assembly-CSharp
-        m_MethodName: StopLooking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2980471128352062335
 GameObject:
   m_ObjectHideFlags: 0
