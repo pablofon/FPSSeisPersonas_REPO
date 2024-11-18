@@ -1682,7 +1682,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ecdcbf16d0dd5c1428246cc62feda746, type: 2}
+  - {fileID: 2100000, guid: 315ff5a5565616b4ead4d7a7bb7f4e52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2938,6 +2938,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8252315307114442223}
+    - target: {fileID: 2510034797314959762, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2939604108206648682, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2987,6 +2992,38 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_text
+      value: NO SE ABRE DE ESTE LADO
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c4a71e6953099f44e85f2befe7e14bca,
+        type: 2}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3680987822744141087, guid: c4a71e6953099f44e85f2befe7e14bca,
+        type: 2}
+    - target: {fileID: 6567570526473965073, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6985384338893759132, guid: 3d28c0bd2dd8ad544b43dd470c82e91d,
         type: 3}
