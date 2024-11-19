@@ -678,6 +678,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9433962
       objectReference: {fileID: 0}
+    - target: {fileID: 7653878572130979606, guid: f14ad1784d9838743abe171ccbcae1ba,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 8184305608038768747, guid: f14ad1784d9838743abe171ccbcae1ba,
         type: 3}
       propertyPath: m_IsActive
