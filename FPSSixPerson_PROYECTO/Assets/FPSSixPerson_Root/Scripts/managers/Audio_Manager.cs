@@ -24,7 +24,6 @@ public class Audio_Manager : MonoBehaviour
     public AudioClip correct;
     public AudioClip Weapon;
     public AudioClip Vent;
-    public AudioClip Walk;
     public AudioClip Danger;
     
 

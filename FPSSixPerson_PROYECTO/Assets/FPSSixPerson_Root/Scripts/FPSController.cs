@@ -24,8 +24,7 @@ public class FPSController : MonoBehaviour
 
 
 
-    [SerializeField] bool WalkAudioAlreadyPlayed;
-    Audio_Manager audiomanager;
+    
 
     #region General Variables
     [Header("General References")]
@@ -70,11 +69,7 @@ public class FPSController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Awake()
-    {
-        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
-        WalkAudioAlreadyPlayed = false;
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -163,11 +158,7 @@ public class FPSController : MonoBehaviour
     }
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!WalkAudioAlreadyPlayed)
-        {
-            audiomanager.PlaySFX(audiomanager.Walk);
-            WalkAudioAlreadyPlayed = true;
-        }
+     
         targetDir = context.ReadValue<Vector2>();
     }
     /*public void OnJump(InputAction.CallbackContext context)
@@ -181,7 +172,7 @@ public class FPSController : MonoBehaviour
     {
         inVent = Physics.CheckSphere(ceilingCheck.position, 0.5f, groundLayer);
 
-        WalkAudioAlreadyPlayed = false;
+       
         if (!crouching)
         {
             crouching = true;
