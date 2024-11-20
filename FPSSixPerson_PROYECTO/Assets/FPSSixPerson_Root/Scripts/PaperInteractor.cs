@@ -7,10 +7,7 @@ public class PaperInteractor : MonoBehaviour
     [SerializeField] GameObject panel;
     Audio_Manager audiomanager;
 
-    private void Awake()
-    {
-        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<Audio_Manager>();
-    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,13 +25,13 @@ public class PaperInteractor : MonoBehaviour
 
     public void LookPaper()
     {
-        audiomanager.PlaySFX(audiomanager.Paper);
+        
         panel.SetActive(true);
     }
 
     public void StopLooking()
     {
-        audiomanager.PlaySFX(audiomanager.Paper);
+        
         panel.SetActive(false);
         GameManager.Instance.lookingPaper = false;
     }
